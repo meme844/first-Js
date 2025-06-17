@@ -18,3 +18,7 @@ console.log(player + "はレベルアップした！");
 //var,parseInt(Math.ramdom)
 var number = parseInt(Math.random()*6) +1;
 console.log("サイコロの目は" +number +"です");
+//スライムの合計体重を出すプログラム
+var number = parseInt(Math.random()*10)+1 //数1-10
+console.log("体重100キロのスライムが"+number+"匹現れた！");
+console.log("スライムの合計体重は"+ number * 100+"キロです。");
