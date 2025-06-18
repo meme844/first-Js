@@ -44,3 +44,36 @@ if (number == 1){
 }else{
     console.log("よくがんばったね");
 }
+//if文による条件分岐　比較演算子　例文
+var time = 12;
+if(time < 12){
+    console.log("午前中");
+}else if(time == 12){
+    console.log("正午");
+}else if (time > 12){
+    console.log("午後");
+}
+// a == b :aはbと等しい
+// a > b　:aはbより大きい
+// a < b :aはbより小さい
+//a >= b :aはb以上
+//a <= b :aはb以下
+//a != b :aはbと等しくない
+
+//飲酒可能な年齢か判定するプログラム
+var age = parseInt(Math.random()*5) + 18;
+process.stdout.write(age + "才は"); //process.stdoutは改行されずに出力される
+if (age >= 20){
+    console.log("飲酒可能");
+}else if(age <= 20){
+    console.log("飲酒不可");
+}
+
+//入賞圏内か判別するプログラム
+var place = parseInt(Math.random()*12)+1;
+process.stdout.write(place + "位");
+if(place <= 6){
+    console.log("入賞");
+}else if(place >= 6){
+    console.log("入賞圏外");
+}
