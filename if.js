@@ -77,3 +77,21 @@ if(place <= 6){
 }else if(place >= 6){
     console.log("入賞圏外");
 }
+
+//おみくじを作るプログラミング
+var omikuji = parseInt(Math.random() * 100) + 1;
+if(omikuji > 30){
+    console.log("omikujiの中身は"+ omikuji + "なので大吉");
+}else{
+    console.log("omikujiの中身は"+ omikuji + "なので大凶");
+}
+
+//攻撃を回避させるプログラミング
+//サイコロの出目が4から6ならかわす、それ以外なら10ダメージ受ける
+var dice = parseInt(Math.random()* 6)+1;
+console.log("サイコロは"+dice);
+if (dice >= 4){
+    console.log("スライムの攻撃をかわした");
+}else if(dice < 4){
+    console.log("スライムから10ダメージをうけた");
+}
